@@ -16,11 +16,11 @@ import (
 // 接口请求域名
 const mainURL = "https://api.salesmartly.com"
 
-// 项目API Token
-const apiToken = "DXPvaTUacQJi2ym"
+// 项目API Token 具体获取可以参考以下文档：https://help.salesmartly.com/docs/apitoken?search=1
+const apiToken = "api_token"
 
-// 项目Id
-const projectID = "dnu1b5"
+// 项目Id （在系统内左下角的卡片处获取，所有请求必传）
+const projectID = "project_id"
 
 // 生成 MD5 签名
 func generateMD5Signature(apiToken string, params map[string]string) string {
